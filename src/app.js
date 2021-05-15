@@ -23,7 +23,7 @@ app.get("/about",(req,res)=>{
 })
 app.get("*",(req,res)=>{
     res.render("404errorPage",{
-        errorMsg:'Opps! Page Not Found'
+        errorMsg:'Opps! Page Not Found,Click here to go back'
     });
 })
 app.listen(port,()=>{
